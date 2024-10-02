@@ -3,10 +3,13 @@
 <head>
     <title>Andrews Computer</title>
     <script src="static/main.js"></script>
+    <link rel="stylesheet" href="static/style.css">
 </head>
-<body>
-    <img src="/camera0" alt-text="camera" />
-    <img src="/camera1" alt-text="camera" />
+<body class="vertical-flex">
+    <div>
+        <img src="/camera0" alt-text="camera" />
+        <img src="/camera1" alt-text="camera" />
+    </div>
     <button onclick="reset_pressed()">Reset</button>
     <input type="text" onkeydown="key_entered(event)" id="entry" readonly="true">
 
