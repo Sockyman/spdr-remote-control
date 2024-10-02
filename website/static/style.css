@@ -1,10 +1,26 @@
 
+body {
+    color: rgb(29, 29, 29);
+    background-color: rgb(231, 231, 231);
+    font-family: Verdana, sans-serif;
+    
+}   
+
 .vertical-flex {
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 
 .horizontal-flex {
     display: flex;
     flex-direction: row;
+}
+
+#key-input {
+    max-width: 50px;
+}
+
+.reset-button {
+    max-width: 100px;
 }

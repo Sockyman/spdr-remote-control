@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Andrews Computer</title>
+    <title>SPDR Computer</title>
     <script src="static/main.js"></script>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body class="vertical-flex">
+    <h2><a href="https://github.com/Sockyman/spdr-project">8-Bit Computer</a> Control Panel</h2>
     <div>
-        <img src="/camera0" alt-text="camera" />
-        <img src="/camera1" alt-text="camera" />
+        <img src="/camera0" />
+        <img src="/camera1" />
     </div>
-    <button onclick="reset_pressed()">Reset</button>
-    <input type="text" onkeydown="key_entered(event)" id="entry" readonly="true">
+    <button onclick="reset_pressed()" class="reset-button">Reset</button>
+    <div>
+        <label for="key-input">Keyboard Input</label>
+        <input type="text" onkeydown="key_entered(event)" id="entry" readonly="true" id="key-input">
+    </div>
 
     <form method="post" enctype="multipart/form-data">
-        <input type="file" id="filePicker" name="file" />
+        <label for="file">Enter a file in hexidecimal</label>
+        <input type="file" id="filePicker" name="file" id="file" />
         <button>Upload</button>
     </form>
 </body>
