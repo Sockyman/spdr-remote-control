@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Andrews Computer</title>
+    <script src="static/main.js"></script>
+</head>
+<body>
+    <img src="/camera0" alt-text="camera" />
+    <img src="/camera1" alt-text="camera" />
+    <button onclick="reset_pressed()">Reset</button>
+    <input type="text" onkeydown="key_entered(event)" id="entry" readonly="true">
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" id="filePicker" name="file" />
+        <button>Upload</button>
+    </form>
+</body>
+</html>
+
